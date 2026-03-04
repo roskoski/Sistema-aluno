@@ -19,3 +19,18 @@ function calcularNota() {
     let aprovado = media >= mediaMinima;
     let recuperacao = media >= 5 && media < 7;
     let reprovado = media < 5;
+
+    let ResultadoFinal = "";
+
+    if (aprovado) {
+        ResultadoFinal = "aprovado";
+    } else if (recuperacao) {
+        ResultadoFinal="recuperação";
+    } else if (reprovado) {
+        ResultadoFinal="reprovado";
+    }
+
+    document.getElementById("resultado").innerHTML = 
+         ´Aluno : ${nome} <hr>
+         media</hr>
+ }
